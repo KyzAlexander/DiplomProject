@@ -1,0 +1,65 @@
+$ColorTextItems:#837171;
+$ColorTextItemsHover:#3A1212;
+$ColorBorderHover:#FF2625;
+$BackgroundBurgerSpan:#FF2625;
+
+@mixin TextHeaderItems {
+  font-family: url("/src/assets/fonts/Alegreya-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.header {    
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 30px;
+      
+    .header__left {            
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+           
+        .header__logo {
+            width: 100%;              
+        }          
+
+        .header__items {
+            margin-left: 125px;
+            display: flex;
+            flex-direction: row;                   
+        
+            .item {
+                @include TextHeaderItems;                    
+                color: $ColorTextItems;
+                margin-right: 60px;
+                border-bottom: 3px solid transparent;
+              }
+            .item:hover {                   
+                color: $ColorTextItemsHover;                       
+                border-color: $ColorBorderHover; 
+            }
+        }
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 45px; 
+        height: 45px;
+        span {                
+            height: 3px;
+            width: 100%;                
+            background: $BackgroundBurgerSpan;
+            &:nth-child(2) {
+                margin: 5px 0;
+              }                
+        } 
+    }
+}
+
