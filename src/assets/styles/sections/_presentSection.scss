@@ -1,0 +1,74 @@
+@import "src/assets/styles/util/_mixins.scss";
+
+.presentSection {
+    display: flex;
+    flex-direction: row;    
+}
+
+.textBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__textOverTitle {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;       
+
+        p {
+            @include FontTextOverTitle;
+        }
+        img {
+            width: 26px;
+            height: 26px;
+            margin-left: 16px;
+        }
+    }
+
+    &__title {
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 80px;
+        color: $ColorTitle;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+    &__subtitle {
+        font-family: Alegreya;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        color: $ColorSubtitle;
+    }
+    &__btm {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 60px;       
+    }
+    @include BtnAndBtnHover;
+
+    &__backgroundText {
+        font-family: Josefin Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 200px;
+        color: rgba(255, 38, 37, 0.05);
+        margin-top: 60px;        
+    }   
+
+}
+
+.bacgroundPhoto {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 0px 0px 0px 107px;
+    background: url("../images/presentSectionBacgroundPhoto.png"); 
+    background-size: cover;   
+    background-position: center;
+    z-index: 5; //!!!не работает 
+}
+
+
+

@@ -1,6 +1,36 @@
+// header
+
 @mixin TextHeaderItems {
     font-family: Alegreya;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
   }
+
+// presentSection
+
+@mixin FontTextOverTitle { //используется во всем макете
+    font-family: JosefinSans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 160%;    
+    color: $ColorTextOverTitle;
+}
+@mixin BtnAndBtnHover {
+  a {
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;        
+    color: $ColorBtnText;
+    padding: 10px 60px;
+    background-color: $ColorBtnBackground;
+    border-radius: 30px;
+  }
+  a:hover {      //!!!прыгает текст выше когда наводишь    
+    color: $ColorBtnTextHover;
+    background-color: transparent;        
+    border: 0.75px solid $ColorBtnBorderHover;                
+  }  
+}
