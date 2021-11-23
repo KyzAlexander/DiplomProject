@@ -1,14 +1,4 @@
-$ColorTextItems:#837171;
-$ColorTextItemsHover:#3A1212;
-$ColorBorderHover:#FF2625;
-$BackgroundBurgerSpan:#FF2625;
-
-@mixin TextHeaderItems {
-  font-family: url("/src/assets/fonts/Alegreya-Regular.ttf");
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-}
+@import "src/assets/styles/util/_mixins.scss";
 
 .header {    
   width: 100%;
