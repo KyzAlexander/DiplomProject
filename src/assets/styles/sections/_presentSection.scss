@@ -66,11 +66,10 @@
         font-style: normal;
         font-weight: 600;
         font-size: 200px;
-        color: rgba(255, 38, 37, 0.05);
+        color: $ColorBackgroundText;
         margin-top: 60px;
         z-index: 0;        
-    }   
-
+    }
 }
 
 .bacgroundPhoto {  //!! девушка урезается по ширине 
@@ -94,5 +93,45 @@
     }       
 }
 
+
+@media screen and (max-width: 670px) {
+    .rectangles, .bacgroundPhoto, .points {
+        display: none;
+    }
+    .textBlock {
+        max-width: 100%;
+        width: 670px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    
+        &__textOverTitle {
+            p {
+                font-size: 15px;
+            }
+            img {
+                width: 20px;
+                height: 20px;                
+            }
+        }
+
+        &__title {            
+            font-size: 50px;            
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        &__subtitle {            
+            font-size: 17px;            
+        }
+        &__btm {            
+            margin-top: 30px;            
+            a {                
+                font-size: 17px;               
+                padding: 10px 30px;                
+            }                    
+        }
+    }
+}
 
 
