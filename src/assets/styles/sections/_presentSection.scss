@@ -2,13 +2,24 @@
 
 .presentSection {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;           
 }
 
-.textBlock {
+.rectangles {
+    img {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 130px;    
+    }
+}
+
+.textBlock {     
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 300px;
+    margin-left: 215px;
 
     &__textOverTitle {
         display: flex;
@@ -44,10 +55,11 @@
     &__btm {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        margin-top: 60px;       
+        justify-content: space-between; //!!! не работает с кнопками
+        margin-top: 60px;
+        @include BtnAndBtnHover;       
     }
-    @include BtnAndBtnHover;
+    
 
     &__backgroundText {
         font-family: Josefin Sans;
@@ -55,19 +67,31 @@
         font-weight: 600;
         font-size: 200px;
         color: rgba(255, 38, 37, 0.05);
-        margin-top: 60px;        
+        margin-top: 60px;
+        z-index: 0;        
     }   
 
 }
 
-.bacgroundPhoto {
+.bacgroundPhoto {  //!! девушка урезается по ширине 
     max-width: 100%;
-    width: 100%;
+    width: 758px;
     border-radius: 0px 0px 0px 107px;
-    background: url("../images/presentSectionBacgroundPhoto.png"); 
+    background: url("../images/presentSectionBacgroundPhoto.png") no-repeat; 
     background-size: cover;   
     background-position: center;
-    z-index: 5; //!!!не работает 
+    z-index: 2; 
+    position: relative;
+    top: 0;
+    right: 0; 
+}
+
+@include PointsAndPointsHover;
+.points {       
+    img {        
+        top: 147%;
+        right: 2%;                 
+    }       
 }
 
 

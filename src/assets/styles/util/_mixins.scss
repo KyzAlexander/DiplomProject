@@ -24,13 +24,29 @@
     font-weight: bold;
     font-size: 22px;        
     color: $ColorBtnText;
-    padding: 10px 60px;
+    padding: 10px 40px;
     background-color: $ColorBtnBackground;
     border-radius: 30px;
+    transition: all 0.3s ease;    
+    border: 0.75px solid transparent; //чтобы не прыгал остальной текст при наведении   
+    
   }
-  a:hover {      //!!!прыгает текст выше когда наводишь    
+  a:hover {        
     color: $ColorBtnTextHover;
     background-color: transparent;        
     border: 0.75px solid $ColorBtnBorderHover;                
   }  
+}
+@mixin PointsAndPointsHover {
+  .points {    
+    img {
+        width: 118px; 
+        position: absolute;
+        z-index: 10;        
+        transition: all 0.3s ease;          
+    }
+    img:hover {
+        transform: scale(1.25);
+    }    
+}
 }
