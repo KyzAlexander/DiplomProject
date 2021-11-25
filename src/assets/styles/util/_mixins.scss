@@ -49,3 +49,50 @@
     }    
 }
 }
+
+// firstSlider
+
+@mixin OneSlideFirstSlider {
+  .slides__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $ColorWhite;
+    border: 0.5px solid $ColorBorder;
+    box-sizing: border-box;
+    border-radius: 5px 5px 5px 35px;
+    width: 270px;
+    height: 282px;
+    img {
+      width: 63px;
+      height: 63px;
+    }
+    h3 {
+      margin-top: 45px;
+      font-family: Alegreya;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+      color: $ColorBrown;
+    }
+    p {
+      display: none;
+    }
+  }
+  .slides__slide:hover {
+    // transform: matrix(1,1,0,0);
+    transform: scaleY(2)
+    p {
+      display: block;
+      margin-top: 40px;
+      font-family: Alegreya;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      text-align: center;
+      color: $ColorRed;
+    }
+  }
+}
