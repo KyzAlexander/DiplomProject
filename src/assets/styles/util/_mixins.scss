@@ -14,7 +14,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 26px;        
-    color: $ColorTextOverTitle;
+    color: $ColorRed;
 }
 @mixin BtnAndBtnHover {
   a {
@@ -24,16 +24,16 @@
     font-size: 22px;        
     color: $ColorBtnText;
     padding: 10px 40px;
-    background-color: $ColorBtnBackground;
+    background-color: $ColorRed;
     border-radius: 30px;
     transition: all 0.3s ease;    
     border: 0.75px solid transparent; //чтобы не прыгал остальной текст при наведении   
     
   }
   a:hover {        
-    color: $ColorBtnTextHover;
+    color: $ColorBrown;
     background-color: transparent;        
-    border: 0.75px solid $ColorBtnBorderHover;                
+    border: 0.75px solid $ColorRed;                
   }  
 }
 @mixin PointsAndPointsHover {

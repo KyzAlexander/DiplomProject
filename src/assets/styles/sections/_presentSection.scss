@@ -2,14 +2,16 @@
 
 .presentSection {
     display: flex;
-    flex-direction: row;           
+    flex-direction: row; 
+    position: relative;          
 }
 
-.rectangles {
+.rectangles {    
+    
     img {
     position: absolute;
-    left: 0;
-    top: 30%;
+    left: -7%;
+    top: 18%;
     width: 130px;    
     }
 }
@@ -18,8 +20,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 300px;
-    margin-left: 215px;
+    margin-top: 210px; // если эти марджены убрать, то текст съезжает
+    margin-left: 80px; //
+    
 
     &__textOverTitle {
         display: flex;
@@ -41,7 +44,7 @@
         font-style: normal;
         font-weight: bold;
         font-size: 80px;
-        color: $ColorTitle;
+        color: $ColorBrown;
         margin-top: 40px;
         margin-bottom: 25px;
     }
@@ -50,13 +53,16 @@
         font-style: normal;
         font-weight: normal;
         font-size: 22px;
-        color: $ColorSubtitle;
+        color: $ColorGray;
     }
     &__btm {
         display: flex;
         flex-direction: row;
         justify-content: space-between; //!!! не работает с кнопками
         margin-top: 60px;
+        a {
+            margin-right: 30px;
+        }
         @include BtnAndBtnHover;       
     }
     
@@ -76,26 +82,32 @@
     max-width: 100%;
     width: 758px;
     border-radius: 0px 0px 0px 107px;
-    background: url("../images/presentSectionBacgroundPhoto.png") no-repeat; 
+    background: url("/assets/images/presentSectionBacgroundPhoto.png") no-repeat; 
     background-size: cover;   
     background-position: center;
     z-index: 2; 
     position: relative;
-    top: 0;
-    right: 0; 
+    top: -50%;
+    right: 0%; //?? мб надо подровнять
 }
 
 @include PointsAndPointsHover;
 .points {       
     img {        
-        top: 147%;
-        right: 2%;                 
+        top: 92%;
+        right: 3%;  //!!! тоже надо подровнять               
     }       
+}
+
+@media screen and (max-width: 1050px) {
+    .rectangles, .points  {
+        display: none;
+    }    
 }
 
 
 @media screen and (max-width: 670px) {
-    .rectangles, .bacgroundPhoto, .points {
+    .rectangles, .bacgroundPhoto, .points, .textBlock__backgroundText {
         display: none;
     }
     .textBlock {
@@ -105,6 +117,7 @@
         justify-content: center;
         align-items: center;
         margin-left: 0;
+        margin-top: 80px;
     
         &__textOverTitle {
             p {
