@@ -1,6 +1,51 @@
+// header
+
 @mixin TextHeaderItems {
     font-family: Alegreya;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
   }
+
+// presentSection
+
+@mixin FontTextOverTitle { //используется во всем макете
+    font-family: JosefinSans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;        
+    color: $ColorRed;
+}
+@mixin BtnAndBtnHover {
+  a {
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;        
+    color: $ColorWhite;
+    padding: 10px 40px;
+    background-color: $ColorRed;
+    border-radius: 30px;
+    transition: all 0.3s ease;    
+    border: 0.75px solid transparent; //чтобы не прыгал остальной текст при наведении   
+    
+  }
+  a:hover {        
+    color: $ColorBrown;
+    background-color: transparent;        
+    border: 0.75px solid $ColorRed;                
+  }  
+}
+@mixin PointsAndPointsHover {
+  .points {    
+    img {
+        width: 118px; 
+        position: absolute;
+        z-index: 10;        
+        transition: all 0.3s ease;          
+    }
+    img:hover {
+        transform: scale(1.25);
+    }    
+}
+}

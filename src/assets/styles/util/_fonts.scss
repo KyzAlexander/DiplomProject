@@ -2,17 +2,33 @@
 
 @font-face {
     font-family: 'Alegreya';
-    src: url("/assets/fonts/gilroy/Alegreya-Bold.ttf");
+    src: url("/assets/fonts/gilroy/Alegreya-Regular.ttf");
     font-weight: 400;
     font-style: normal;
 }
-
 @font-face {
-    font-family: 'Gilroy';
-    src: url("/assets/fonts/gilroy/ultra-light.ttf");
-    font-weight: 200;
+    font-family: 'Alegreya';
+    src: url("/assets/fonts/gilroy/Alegreya-Bold.ttf");
+    font-weight: 700;
     font-style: normal;
 }
+
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url("/assets/fonts/gilroy/JosefinSans-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url("/assets/fonts/gilroy/JosefinSans-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
 
 @font-face {
     font-family: 'Gilroy';
