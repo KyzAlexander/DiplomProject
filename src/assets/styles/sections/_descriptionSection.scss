@@ -1,0 +1,58 @@
+.descriptionSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+}
+.descriptionSectionFirst {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+
+    @include PointsAndPointsHover;
+    .points {    
+        img {        
+            top: -6%;
+            left: 1%;               
+        } 
+    }
+    .img {
+        img {
+            max-width: 566px;
+            width: 100%;
+            border-radius: 2px 2px 100px 2px;
+        }
+        
+    }
+    .textBlock {
+        display: flex;
+        flex-direction: column;        
+        align-items: flex-start;
+        margin-top: 0;
+
+        @include FontTextOverTitle;
+        &__title {
+            font-family: Josefin Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 44px;
+            color: $ColorBrown;
+            margin-top: 30px;
+            margin-bottom: 25px;            
+        }
+        &__subtitle {
+            font-family: Alegreya;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            color: $ColorGray;            
+        }
+        .textBlock__btm {
+            margin-top: 40px;
+        }                   
+        @include BtnAndBtnHover;       
+       
+    }
+}
