@@ -1,9 +1,16 @@
 .firstSlider {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
+
+    .icon {
+        position: absolute;
+        top: 5%;
+        left: 0%;
+    }
 
     .textBlock {
         display: flex;
@@ -28,8 +35,13 @@
         }
     }
 }
-
-.slides{
+.wrapper {
+    position: relative;
+    #leftArrow, #rightArrow {
+        display: none;
+    }
+}
+.slides{   
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -38,9 +50,55 @@
         margin-left: 30px;
     }    
 }
-// .controls {
-//     .left
-// }
+.controls {
+    position: absolute;    
+    right: 2%;
+    top: 110%;
+    display: flex;
+    flex-direction: row;   
+
+    .leftArrow {
+        margin-right: 10px;        
+        .arrow {
+            width: 13px;
+            height: 7px;
+        }
+        .arrowHover {
+            width: 30px;
+            height: 16px;
+            display: none;
+        }
+    }
+    .leftArrow:hover {
+        .arrowHover {
+            transform: rotate(180deg);
+            display: unset;
+        }
+        .arrow {
+            display: none;
+        }
+    }
+    .rightArrow {
+        .arrow {
+            width: 13px;
+            height: 7px;
+            transform: rotate(180deg);
+        }
+        .arrowHover {
+            width: 30px;
+            height: 16px;
+            display: none;
+        }
+    }
+    .rightArrow:hover {
+        .arrowHover {            
+            display: unset;
+        }
+        .arrow {
+            display: none;
+        }
+    }    
+}
 
 
 
