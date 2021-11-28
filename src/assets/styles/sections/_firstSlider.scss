@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     margin-bottom: 100px;
 
     .icon {
@@ -101,5 +102,40 @@
 }
 
 
+@media screen and (max-width: 1050px) {
+    .icon {
+        display: none;
+    }
+    .firstSlider {   
+        .textBlock {        
+            margin-top: 70px;       
+        }
+    }        
+    .slides { 
+        .slideFour {
+            display: none;
+        }
+    }          
+}
 
-
+@media screen and (max-width: 670px) {
+    .firstSlider {   
+        .textBlock {        
+            margin-top: 70px;
+            &__textOverTitle {
+                font-size: 15px;
+            }
+            &__title {
+                margin-top: 20px;
+                margin-bottom: 30px;               
+                font-size: 30px;
+                
+            }       
+        }
+    }
+    .slides {          
+        .slideOne, .slideThree, .slideFour {
+            display: none;
+        }
+    }           
+}
