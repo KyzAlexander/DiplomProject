@@ -1,0 +1,141 @@
+.firstSlider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px;
+
+    .icon {
+        position: absolute;
+        top: 5%;
+        left: 0%;
+    }
+
+    .textBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 170px;
+        margin-left: 0;
+
+        &__textOverTitle {
+            @include FontTextOverTitle;
+        }
+        &__title {
+            margin-top: 30px;
+            margin-bottom: 60px;
+            font-family: Josefin Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 44px;
+            text-align: center;
+            color: $ColorBrown;
+        }
+    }
+}
+.wrapper {
+    position: relative;
+    #leftArrow, #rightArrow {
+        display: none;
+    }
+}
+.slides{   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @include OneSlideFirstSlider;
+    .slideTwo, .slideThree, .slideFour {
+        margin-left: 30px;
+    }    
+}
+.controls {
+    position: absolute;    
+    right: 2%;
+    top: 110%;
+    display: flex;
+    flex-direction: row;   
+
+    .leftArrow {
+        margin-right: 10px;        
+        .arrow {
+            width: 13px;
+            height: 7px;
+        }
+        .arrowHover {
+            width: 30px;
+            height: 16px;
+            display: none;
+        }
+    }
+    .leftArrow:hover {
+        .arrowHover {
+            transform: rotate(180deg);
+            display: unset;
+        }
+        .arrow {
+            display: none;
+        }
+    }
+    .rightArrow {
+        .arrow {
+            width: 13px;
+            height: 7px;
+            transform: rotate(180deg);
+        }
+        .arrowHover {
+            width: 30px;
+            height: 16px;
+            display: none;
+        }
+    }
+    .rightArrow:hover {
+        .arrowHover {            
+            display: unset;
+        }
+        .arrow {
+            display: none;
+        }
+    }    
+}
+
+
+@media screen and (max-width: 1050px) {
+    .icon {
+        display: none;
+    }
+    .firstSlider {   
+        .textBlock {        
+            margin-top: 70px;       
+        }
+    }        
+    .slides { 
+        .slideFour {
+            display: none;
+        }
+    }          
+}
+
+@media screen and (max-width: 670px) {
+    .firstSlider {   
+        .textBlock {        
+            margin-top: 70px;
+            &__textOverTitle {
+                font-size: 15px;
+            }
+            &__title {
+                margin-top: 20px;
+                margin-bottom: 30px;               
+                font-size: 30px;
+                
+            }       
+        }
+    }
+    .slides {          
+        .slideOne, .slideThree, .slideFour {
+            display: none;
+        }
+    }           
+}
