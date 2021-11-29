@@ -1,4 +1,3 @@
-// header
 
 @mixin TextHeaderItems {
     font-family: Alegreya;
@@ -7,7 +6,6 @@
     font-size: 24px;
   }
 
-// presentSection
 
 @mixin FontTextOverTitle { //используется во всем макете
     font-family: JosefinSans;
@@ -16,6 +14,8 @@
     font-size: 26px;        
     color: $ColorRed;
 }
+
+
 @mixin BtnAndBtnHover {
   a {
     font-family: Alegreya;
@@ -36,21 +36,21 @@
     border: 0.75px solid $ColorRed;                
   }  
 }
+
 @mixin PointsAndPointsHover {
   .points {    
     img {
-        width: 118px; 
-        position: absolute;
-        z-index: 10;        
-        transition: all 0.3s ease;          
+      width: 118px; 
+      position: absolute;
+      z-index: 10;        
+      transition: all 0.3s ease;          
     }
     img:hover {
-        transform: scale(1.25);
+      transform: scale(1.25);
     }    
-}
+  }
 }
 
-// firstSlider
 
 @mixin OneSlideFirstSlider {
   .slides__slide {
