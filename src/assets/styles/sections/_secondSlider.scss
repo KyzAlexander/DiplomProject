@@ -1,9 +1,35 @@
 .secondSlider {
+    position: relative;
     display: flex;
     flex-direction: column;    
     align-items: center;
     width: 100%;
     margin-top: 145px;
+
+    .rectangles {   
+        img {
+        position: absolute;
+        left: -7%;
+        top: -10%;
+        width: 130px;    
+        }
+    }
+
+    .secondSliderIcon1 {
+        position: absolute;
+        left: 19%;
+        top: -15%;
+    }
+    .secondSliderIcon2 {
+        position: absolute;
+        right: 13%;
+        top: 5%;
+    }
+    .secondSliderIcon3 {
+        position: absolute;
+        left: -5%;
+        top: 60%;
+    }
 
     .textBlock{
         display: flex;
