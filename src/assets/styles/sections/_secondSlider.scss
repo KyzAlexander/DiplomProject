@@ -4,8 +4,7 @@
     flex-direction: column;    
     align-items: center;
     width: 100%;
-    margin-top: 145px;
-    margin-bottom: 200px;
+    margin-top: 145px;    
 
     .rectangles {   
         img {
@@ -87,6 +86,49 @@
             top: 98%;
             display: flex;
             flex-direction: row;                 
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .rectangles, 
+    .secondSliderIcon1, 
+    .secondSliderIcon2, 
+    .secondSliderIcon3 {
+        display: none;
+    }
+    .secondSlider {
+        margin-top: 100px;
+        .textBlock{
+            
+            &__textOverTitle {
+                font-size: 15px;
+            }
+            &__title {                
+                font-size: 30px;                
+                margin-top: 20px;
+            }
+        }
+        .wrapperSecondSlider {            
+           
+            .slidesSecondSlider{   
+                         
+                .slideTwo {
+                    margin: 0 20px;               
+                }
+                h3 {                    
+                    font-size: 15px;                    
+                    margin-top: 20px;
+                }
+                p {                    
+                    font-size: 10px;                    
+                    margin-top: 3px;
+                }    
+            }
+            .controls {                   
+                right: 50%;
+                top: 105%;                
+            }
         }
     }
 }
