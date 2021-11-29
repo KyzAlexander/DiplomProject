@@ -5,6 +5,7 @@
     align-items: center;
     width: 100%;
     margin-top: 145px;
+    margin-bottom: 200px;
 
     .rectangles {   
         img {
@@ -79,6 +80,43 @@
                 color: $ColorGray; 
                 margin-top: 3px;
             }    
+        }
+        .controls {
+            position: absolute;    
+            right: 2%;
+            top: 98%;
+            display: flex;
+            flex-direction: row;
+            .leftArrow:hover {                   
+                transform: scale(2);
+                path {
+                    fill: $ColorRed;
+                }                
+            }
+            .rightArrow {
+                path {
+                transform: rotate(180deg);
+                transform-origin: 50% 50%;
+                }
+            }
+            .rightArrow:hover {
+                transform: scale(2);
+                path {
+                    fill: $ColorRed;
+                }
+            } 
+            
+
+            // .leftArrow:hover {
+            //     .beforeHoverleftArrow {
+            //         display: none;                    
+            //     }
+            //     .HoverleftArrow {
+            //         display: unset;
+            //         // transform: rotate(180deg);
+            //     }
+                
+            // }
         }
     }
 }
