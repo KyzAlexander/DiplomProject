@@ -110,3 +110,43 @@
         }
     }
 }
+
+@media screen and (max-width: 1050px) {
+    .icon1, .icon2, .points {
+        display: none;
+    }
+    .reviews {
+        .textBlock {            
+            margin-left: 30px;
+            &__textOverTitle {
+                @include FontTextOverTitle;
+                font-size: 20px;
+            }
+            &__title {               
+                font-size: 35px;               
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .img, .quotes {
+        display: none;
+    }
+    .reviews {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100 px;
+        .textBlock {
+            align-items: center;
+            margin-left: 0;
+        }    
+        .wrapperReviewsSlider {
+            position: static;            
+            .slidesReviewsSlider{                
+                padding: 30px;                
+            }
+        }
+    }
+}
