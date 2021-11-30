@@ -1,16 +1,20 @@
 footer 
-    div.footer
+    div.footer.container
         div.linksFooter
-            div.links__socialNetworks
+            div.linksFooter__socialNetworks
                 div.title
-                img(src="./assets/images/logo.png", alt="logo")
-                h3 Golds Gym
-            p A Modified Fitness Club that <br> provide fitness & nutrition related <br> services to improve your health
-            div.imgSocialNetworks
-                img(src="", alt="")
-                img(src="", alt="")
-                img(src="", alt="")
-                img(src="", alt="")
+                    img(src="./assets/images/logo.png", alt="logo")
+                    h3 Golds Gym
+                p A Modified Fitness Club that <br> provide fitness & nutrition related <br> services to improve your health
+                div.linksFooter__imgSocialNetworks
+                    a(href="")
+                        include icons/footerIcon1.pug
+                    a(href="")
+                        include icons/footerIcon2.pug 
+                    a(href="")
+                        include icons/footerIcon3.pug 
+                    a(href="")
+                        include icons/footerIcon4.pug 
             div.linksFooter__links.resources
                 h3 Resources
                 a(href="#") Features
