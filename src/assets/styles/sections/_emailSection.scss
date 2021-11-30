@@ -1,0 +1,51 @@
+.emailSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .textBlock {
+        margin-top: 0;
+        h1 {
+            font-family: Josefin Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 44px;
+            text-align: center;
+            color: $ColorBrown;            
+        }
+        p {
+            font-family: Alegreya;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            text-align: center;
+            color: $ColorGray;
+            margin-top: 25px;
+            margin-bottom: 35px;
+        }
+    }
+}
+.inputEmail {
+    position: relative;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    label {
+        position: absolute;
+        top: 14%;
+        right: 1%;
+        @include BtnAndBtnHover;
+    }
+}
+#email {   
+    padding: 20px 350px 20px 80px;
+    background: $ColorWhite;    
+    border-radius: 36.5px;
+    border: none;
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: $ColorTextInput;
+}
