@@ -1,9 +1,36 @@
 .emailSection {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 230px;    
+    .icon1 {
+        position: absolute;
+        left: 50%;
+        top: -45%;        
+    }
+    .icon2 {
+        position: absolute;
+        left: 15%;
+        top: 100%;        
+    }
+    .icon3 {
+        position: absolute;
+        right: 10%;
+        top: 90%;        
+    }
+    .rectangles {
+        img {
+            position: absolute;
+            left: -6%;
+            top: -15%;
+            width: 130px;    
+            
+        }
+    }
+
     .textBlock {
         margin-top: 0;
         h1 {
