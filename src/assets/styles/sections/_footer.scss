@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    background-color: rgba(255, 243, 244, 0.9); // Поправить !!!    
     margin-top: 260px;
     margin-bottom: 55px;
 }
@@ -87,8 +88,55 @@
     p {
         font-family: Alegreya;
         font-style: normal;        
-        font-weight: 450;
+        font-weight: 400;
         font-size: 12px;        
         color: $ColorMyName;
     }
+}
+
+@media screen and (max-width: 670px) {    
+    .footer {        
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 25px;
+    }        
+    .linksFooter {       
+        flex-direction: column;        
+        align-items: center;        
+        &__socialNetworks {            
+            align-items: center;
+            .title {                          
+                img {
+                    max-width: 35px;
+                    width: 100%;
+                }
+                h3 {                    
+                    font-size: 21px;                   
+                }
+            }
+            p {               
+                font-size: 19px;                
+                margin-top: 20px;
+                margin-bottom: 15px;
+            }
+        }
+        &__links {            
+            align-items: center;
+            h3 {                
+                font-size: 18px;                
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            a {                
+                font-size: 16px;                
+                margin-top: 5px;
+            }
+        }
+    }
+    .myName {           
+        margin-top: 20px;
+        p {            
+            font-size: 10px;           
+        }
+    }    
 }
