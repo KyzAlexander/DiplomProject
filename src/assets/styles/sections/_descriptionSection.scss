@@ -160,39 +160,55 @@
 }
 
 @media screen and (max-width: 670px) {
-.descriptionSection {
-    margin-top: 30px;
-}
-.descriptionSectionSecond {
-    margin-top: 70px;
-}
-.icon1, .icon2, .icon3, .icon4, .icon5, .icon6 {
-    display: none;
-}
-.descriptionSectionFirst, .descriptionSectionSecond {
-    
-    .points {
+    .descriptionSection {
+        margin-top: 30px;
+    }
+    .descriptionSectionSecond {
+        margin-top: 70px;
+    }
+    .icon1, .icon2, .icon3, .icon4, .icon5, .icon6 {
         display: none;
     }
-    .textBlock {                
-        &__textOverTitle {
-            font-size: 15px;   
-        }        
-        &__title {            
-            font-size: 25px;            
-            margin-top: 15px;
-            margin-bottom: 15px;            
+    .descriptionSectionFirst, .descriptionSectionSecond {
+        
+        .points {
+            display: none;
         }
-        &__subtitle {            
-            font-size: 17px;                        
-        }
-        .textBlock__btm {
-            margin-top: 15px;
-            a {                
-                font-size: 16px;               
-                padding: 6px 25px;                
+        .textBlock {                
+            &__textOverTitle {
+                font-size: 15px;   
+            }        
+            &__title {            
+                font-size: 25px;            
+                margin-top: 15px;
+                margin-bottom: 15px;            
             }
-        }             
+            &__subtitle {            
+                font-size: 17px;                        
+            }
+            .textBlock__btm {
+                margin-top: 15px;
+                a {                
+                    font-size: 16px;               
+                    padding: 6px 25px;                
+                }
+            }             
+        }
     }
 }
+
+@media screen and (max-width: 560px) {
+    .descriptionSectionFirst, .descriptionSectionSecond {
+        .img {
+            img {
+                display: none;                
+            }        
+        }
+        .textBlock {
+            display: flex;
+            flex-direction: column;        
+            align-items: center;
+            margin-top: 0;
+        }
+    }
 }
