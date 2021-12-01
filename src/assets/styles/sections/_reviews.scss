@@ -1,0 +1,152 @@
+.reviews {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;    
+    width: 100%;
+    margin-top: 200px;
+
+    .icon1 {
+        position: absolute;
+        left: -5%;
+        top: -15%;
+    }
+    .icon2 {
+        position: absolute;
+        right: 19%;
+        top: -10%;
+    }
+
+    .textBlock{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0;
+        margin-left: 100px;
+        &__textOverTitle {
+            @include FontTextOverTitle;
+        }
+        &__title {            
+            font-family: Josefin Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 44px;
+            text-align: center;
+            color: $ColorBrown;
+            margin-top: 30px;
+        }
+    }
+    .img {
+        img {
+            max-width: 500px;
+            width: 100%;
+            border-radius: 100px 2px 2px 2px;
+        }
+    }
+    .wrapperReviewsSlider {
+        position: absolute;
+        left: 38%;
+        top: 43%;
+        z-index: 5;
+        #leftArrow, #rightArrow {
+            display: none;
+        }
+        .slidesReviewsSlider{
+            position: relative;   
+            max-width: 624px;
+            width: 100%;
+            padding: 60px;
+            background: $ColorWhite;            
+            border-radius: 2px 100px 2px 2px;         
+            &__slide {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;                 
+            }
+            .review {
+                font-family: Josefin Sans;
+                font-style: italic;
+                font-weight: normal;
+                font-size: 22px;
+                color: $ColorGray;
+            }
+            .name {
+                font-family: Josefin Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                color: $ColorBrown;
+                margin-top: 40px;
+                margin-bottom: 10px;
+            }
+            .country {
+                font-family: Josefin Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                color: $ColorGray;
+            }
+        }
+        .quotes {
+            z-index: 2;
+            position: absolute;
+            left: 40%;
+            top: 13%;
+        }
+        @include PointsAndPointsHover;
+        .points {
+            img {
+                z-index: -1;                
+                right: -11%;
+                top: 76%;
+            }
+        }        
+        .controls {
+            position: absolute;    
+            right: 10%;
+            top: 80%;
+            display: flex;
+            flex-direction: row;                 
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .icon1, .icon2, .points {
+        display: none;
+    }
+    .reviews {
+        .textBlock {            
+            margin-left: 30px;
+            &__textOverTitle {
+                @include FontTextOverTitle;
+                font-size: 20px;
+            }
+            &__title {               
+                font-size: 35px;               
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .img, .quotes {
+        display: none;
+    }
+    .reviews {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100 px;
+        .textBlock {
+            align-items: center;
+            margin-left: 0;
+        }    
+        .wrapperReviewsSlider {
+            position: static;            
+            .slidesReviewsSlider{                
+                padding: 30px;                
+            }
+        }
+    }
+}

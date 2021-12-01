@@ -1,0 +1,30 @@
+section.reviews.container
+    div.icon1 
+        include icons/reviewsIcon1.pug
+    div.icon2 
+        include icons/reviewsIcon2.pug
+    div.img
+        img(src="./assets/images/ImgSectionReviews.png", alt="people")
+    div.textBlock
+        p.textBlock__textOverTitle Testimonial                      
+        h1.textBlock__title That’s What Our <br> Super Client Says
+    div.wrapperReviewsSlider
+        input#leftArrow(type="radio")
+        input#rightArrow(type="radio")
+        div.slidesReviewsSlider
+            div.slidesReviewsSlider__slide.slideOne
+                p.review “Gale is an amazing trainer as well as a great <br> person. She is so flexible when it comes to my <br> crazy work schedule and makes sure to always fit <br> me in. Every day she pushes me harder towards <br> my goals.”
+                h3.name Jessica Parker
+                p.country Mariland,USA
+        div.quotes
+            include icons/quotes.pug
+        div.points
+            img(src="./assets/images/points.png", alt="points")
+        div.controls 
+            label.left(for="leftArrow")
+                div.leftArrow
+                    include icons/arrow.pug                    
+            label.right(for="rightArrow")
+                div.rightArrow                    
+                    include icons/arrow.pug
+    
