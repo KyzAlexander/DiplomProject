@@ -58,47 +58,25 @@
     display: flex;
     flex-direction: row;   
 
-    .leftArrow {
-        margin-right: 10px;        
-        .arrow {
-            width: 13px;
-            height: 7px;
-        }
-        .arrowHover {
-            width: 30px;
-            height: 16px;
-            display: none;
-        }
-    }
-    .leftArrow:hover {
-        .arrowHover {
-            transform: rotate(180deg);
-            display: unset;
-        }
-        .arrow {
-            display: none;
-        }
+    .leftArrow:hover {                   
+        transform: scale(2);
+        path {
+            fill: $ColorRed;
+        }                
     }
     .rightArrow {
-        .arrow {
-            width: 13px;
-            height: 7px;
-            transform: rotate(180deg);
-        }
-        .arrowHover {
-            width: 30px;
-            height: 16px;
-            display: none;
+        margin-left: 8px;
+        path {
+        transform: rotate(180deg);
+        transform-origin: 50% 50%;
         }
     }
     .rightArrow:hover {
-        .arrowHover {            
-            display: unset;
+        transform: scale(2);
+        path {
+            fill: $ColorRed;
         }
-        .arrow {
-            display: none;
-        }
-    }    
+    } 
 }
 
 
