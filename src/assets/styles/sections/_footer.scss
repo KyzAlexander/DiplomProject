@@ -1,10 +1,12 @@
+footer {
+    background-color: $ColorBackgroundFooter;
+}
 .footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    background-color: rgba(255, 243, 244, 0.9); // Поправить !!!    
-    margin-top: 260px;
+    width: 100%;        
+    margin-top: 85px;
     margin-bottom: 55px;
 }
 .linksFooter {
@@ -45,13 +47,17 @@
         }
         a {
             margin-right: 25px;
+            transition: all 0.3s ease;
+            path, rect {               
+                transition: all 0.3s ease;
+            }            
         }
         a:hover {
             path {
-                fill:$ColorWhite;
+                fill:$ColorWhite;                
             }
             rect {
-                fill:$ColorRed;
+                fill:$ColorRed;                
             }
         }
     }
