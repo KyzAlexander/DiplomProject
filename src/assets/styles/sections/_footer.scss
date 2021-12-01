@@ -21,10 +21,14 @@ footer {
         .title {
             display: flex;
             flex-direction: row;
-            align-items: flex-end;            
+            align-items: flex-end;
+            animation-name: pulsation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite; //количество повторений анимации 
+            
             img {
                 max-width: 46px;
-                width: 100%;
+                width: 100%;                
             }
             h3 {
                 font-family: Abril Fatface;
@@ -32,9 +36,27 @@ footer {
                 font-weight: normal;
                 font-size: 28px;
                 color: $ColorBrown;
-                margin-left: 15px;
+                margin-left: 15px;                
             }
         }
+        @keyframes pulsation {
+            0% {
+                opacity: 1;                
+            }
+            25% {
+                opacity: 0.5;               
+            }
+            50% {
+                opacity: 0;                                
+            }
+            75% {
+                opacity: 0.5;                
+            }
+            100% {
+                opacity: 1;                
+            }
+        }        
+        
         p {
             font-family: Alegreya;
             font-style: normal;
