@@ -1,0 +1,110 @@
+.emailSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 230px;
+    margin-bottom: 260px;    
+    .icon1 {
+        position: absolute;
+        left: 50%;
+        top: -45%;        
+    }
+    .icon2 {
+        position: absolute;
+        left: 15%;
+        top: 100%;        
+    }
+    .icon3 {
+        position: absolute;
+        left: 85%;
+        top: 90%;        
+    }
+    .rectangles {
+        img {
+            position: absolute;
+            left: -6%;
+            top: -15%;
+            width: 130px;    
+            
+        }
+    }
+
+    .textBlock {
+        margin-top: 0;
+        h1 {
+            font-family: Josefin Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 44px;
+            text-align: center;
+            color: $ColorBrown;            
+        }
+        p {
+            font-family: Alegreya;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            text-align: center;
+            color: $ColorGray;
+            margin-top: 25px;
+            margin-bottom: 35px;
+        }
+    }
+}
+.inputEmail {
+    position: relative;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    label {
+        position: absolute;
+        top: 14%;
+        right: 1%;
+        @include BtnAndBtnHover;
+    }
+}
+#email {   
+    padding: 20px 350px 20px 80px;
+    background: $ColorWhite;    
+    border-radius: 36.5px;
+    border: none;
+    font-family: Alegreya;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: $ColorTextInput;
+}
+
+@media screen and (max-width: 670px) {
+    .icon1, .icon2, .icon3, .rectangles {
+        display: none;
+    }
+    .emailSection {        
+        margin-top: 100px;   
+        .textBlock {            
+            h1 {                
+                font-size: 30px;                            
+            }
+            p {                
+                font-size: 15px;                
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .inputEmail {        
+        label {            
+            a {                
+                font-size: 15px;               
+                padding: 8px 15px;
+            }
+        }
+    }
+    #email {   
+        padding: 15px 100px 15px 15px;               
+        font-size: 15px;        
+    }
+}
