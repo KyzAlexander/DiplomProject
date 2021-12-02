@@ -63,7 +63,8 @@
     box-sizing: border-box;
     border-radius: 5px 5px 5px 35px;
     width: 270px;
-    height: 282px;    
+    height: 282px;
+
     img {
       width: 63px;
       height: 63px;
@@ -78,12 +79,6 @@
       color: $ColorBrown;
     }
     a {
-      display: none;
-    }
-  }
-  .slides__slide:hover {
-      
-    a {
       display: block;
       margin-top: 40px;
       font-family: Alegreya;
@@ -92,6 +87,29 @@
       font-size: 22px;
       text-align: center;
       color: $ColorRed;
+
+      max-height: 0; //новое
+      overflow: hidden; //новое
     }
+    // a {
+    //   display: none; // так было!
+    // }
+  }
+  .slides__slide:hover {
+    height: 290px; //новое
+    a{ //новое
+      max-height: 100px; //новое      
+    } //новое
+      
+    // a {               //так было!
+    //   display: block;
+    //   margin-top: 40px;
+    //   font-family: Alegreya;
+    //   font-style: normal;
+    //   font-weight: normal;
+    //   font-size: 22px;
+    //   text-align: center;
+    //   color: $ColorRed;
+    // }
   }
 }

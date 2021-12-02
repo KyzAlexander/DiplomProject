@@ -7,30 +7,19 @@ head
   link(rel='stylesheet' href='./assets/styles/styles.css')
   link(rel="shortcut icon", href="./assets/images/logo.png")
 body
-    //- ====header====   
-    include components/header.pug
-
-    //- presentSection
-    include components/presentSection.pug
-
-    //- firstSlider
+      
+    include components/header.pug    
+    include components/presentSection.pug    
     include components/firstSlider.pug
-    
-    //- descriptionSection
-
     include components/descriptionSection.pug    
-
-    //- secondSlider
     include components/secondSlider.pug
-
-    //- reviews
-    include components/reviews.pug
-    
-    //- emailSection
+    include components/reviews.pug    
     include components/emailSection.pug
-    
+    include components/footer.pug
 
     script(src="scripts/index.js")
+
+    
 
 
 
