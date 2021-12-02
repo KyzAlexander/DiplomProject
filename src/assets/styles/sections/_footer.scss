@@ -23,7 +23,7 @@ footer {
             flex-direction: row;
             align-items: flex-end;
             animation-name: pulsation;
-            animation-duration: 5s;
+            animation-duration: 7s;
             animation-iteration-count: infinite; //количество повторений анимации 
             
             img {
@@ -55,7 +55,7 @@ footer {
             100% {
                 opacity: 1;                
             }
-        }        
+        }      
         
         p {
             font-family: Alegreya;
@@ -125,7 +125,7 @@ footer {
 @media screen and (max-width: 670px) {    
     .footer {        
         align-items: center;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 25px;
     }        
     .linksFooter {       
