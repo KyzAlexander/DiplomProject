@@ -37,15 +37,17 @@
     }
 }
 .wrapper {
-    position: relative;
+    position: relative;    
     #leftArrow, #rightArrow {
         display: none;
     }
 }
-.slides{   
+.slides{ 
+    margin-top: 20px;  
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    // justify-content: center;
+    justify-content: flex-start;
     @include OneSlideFirstSlider;
     .slideTwo, .slideThree, .slideFour {
         margin-left: 30px;
