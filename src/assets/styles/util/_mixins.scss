@@ -80,36 +80,19 @@
     }
     a {
       display: block;
-      margin-top: 40px;
+      margin-top: 20px;      
       font-family: Alegreya;
       font-style: normal;
       font-weight: normal;
       font-size: 22px;
       text-align: center;
       color: $ColorRed;
-
-      max-height: 0; //новое
-      overflow: hidden; //новое
-    }
-    // a {
-    //   display: none; // так было!
-    // }
+      display: none;      
+    }    
   }
-  .slides__slide:hover {
-    height: 290px; //новое
-    a{ //новое
-      max-height: 100px; //новое      
-    } //новое
-      
-    // a {               //так было!
-    //   display: block;
-    //   margin-top: 40px;
-    //   font-family: Alegreya;
-    //   font-style: normal;
-    //   font-weight: normal;
-    //   font-size: 22px;
-    //   text-align: center;
-    //   color: $ColorRed;
-    // }
+  .slides__slide:hover {    
+    a {
+      display: unset; 
+    }    
   }
 }
